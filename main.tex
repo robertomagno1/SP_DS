@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\title{Exam sheet}
+\author{Enrico Scalas}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Compound renewal processes}
+
+\noindent Consider a sequence of i.i.d. positive and absolutely continuous random variables $\{J_i\}_{i=1}^\infty$ with the meaning of interevent times, define the following processes
+
+$$
+T_n = \sum_{i=1}^n J_i, \; \; T_0 = 0,
+$$
+
+and
+
+$$
+N(t) = \max\{n: T_n \leq t \}.
+$$
+
+\\
+\noindent 
+Now, consider a sequence of i.i.d absolutely continuous random variables  $\{X_i\}_{i=1}^\infty$ with the meaning of jumps and define the following process
+
+$$
+Z_n = \sum_{i=1}^n X_i, \; \; Z_0 = 0.
+$$
+
+Finally consider this process
+
+$$
+Z(t) = Z_{N(t)} = \sum_{i=1}^{N(t)} X_i, \; \; Z(0) = Z_0 = 0.
+$$
+
+\begin{enumerate}
+    \item From the knowledge of the cumulative distribution function, $F_{J_1} (u)$ and $F_{X_1} (u)$ and the respective probability density functions derive the cumulative distribution functions and the probability density functions of $T_n$, $N(t)$, $Z_n$, and $Z(t)$.
+    \item Explicitly write the finite dimensional distributions of the process $Z(t)$.
+    \item Prove the existence of the process $Z(t)$. What can you say on its sample paths?
+    \item Find the conditions under which $Z(t)$ is a Markov process.
+    \item Find the conditions under which $Z(t)$ is a martingale.
+\end{enumerate}
+
+\noindent You will have to dig for technical literature, read it and understand it. Please do not forget to proper reference your answer with the relevant literature. If you use LLMs, you should declare it and present the prompts you used and the answers you got in an appendix.
+
+%\begin{thebibliography}{99}
+
+%\bibitem{}
+
+%\end{thebibliography}
+\end{document}
